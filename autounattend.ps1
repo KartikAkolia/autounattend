@@ -7,7 +7,7 @@ $dialog.Multiselect = $false
 
 if ($dialog.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
     Write-Host "No ISO selected. Exiting."
-    exit
+    return
 }
 
 $ISO = $dialog.FileName
