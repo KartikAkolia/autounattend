@@ -6,7 +6,7 @@ $dialog.Title  = "Select Windows ISO"
 $dialog.Multiselect = $false
 
 if ($dialog.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
-    Write-Host "No ISO selected. Exiting."
+    Write-Host "No ISO selected."
     return
 }
 
